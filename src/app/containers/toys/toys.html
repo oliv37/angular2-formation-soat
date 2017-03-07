@@ -1,5 +1,10 @@
 <main class="toy-page">
 
-  <app-toy *ngFor="let toy of toys" [toy]="toy"></app-toy>
+  <app-toy 
+  	*ngFor="let toy of toys | async" 
+	[toy]="toy"
+	(onSelect)="selectToy($event)"
+  >
+  </app-toy>
 
 </main>

@@ -6,7 +6,7 @@
   <aside>
     <a>
       <i class="mdi mdi-basket"></i>
-      <span *ngIf="count">{{ count }}</span>
+      <span *ngIf="count">{{ count | async }}</span>
     </a>
   </aside>
 
