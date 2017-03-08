@@ -1,10 +1,10 @@
 <header>
   <h1>
-    <a>Toy Store</a>
+    <a [routerLink]="['/toys']">Toy Store</a>
   </h1>
 
   <aside>
-    <a>
+    <a (click)="goToPanier()">
       <i class="mdi mdi-basket"></i>
       <span *ngIf="count">{{ count | async }}</span>
     </a>
